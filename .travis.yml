@@ -1,0 +1,18 @@
+sudo: false  
+language: go  
+git:  
+    depth: 1  
+install: go get -v github.com/gohugoio/hugo  
+script:  
+    ‐ hugo  
+deploy:  
+    provider: pages  
+    skip_cleanup: true  
+    github_token: $GITHUB_TOKEN  
+    on:  
+        branch: master  
+    local_dir: public  
+    repo: jonyhy96/jonyhy96.github.io  
+    target_branch: master  
+    email: hy352144278@gmail.com
+    name: jonyhy96
