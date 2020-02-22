@@ -1,0 +1,61 @@
+baseURL = "https://jonyhy96.github.io/"
+languageCode = "en-us"
+title = "Jony's blog"
+
+theme = "KeepIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[params]
+    since = 2020
+    author = "Jony montana"               # Author's name
+    subtitle = "Jony's blog"       # Subtitle
+    home_mode = "other" # post or other
+
+    avatar = "https://avatars2.githubusercontent.com/u/33408569?s=460&v=4" #comment it to use gravatar
+    socialShare = true
+
+    license = 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.social]
+GitHub = "jonyhy96"
+
+[params.share]
+Twitter = true
+Facebook = true
+Reddit = true
+HackerNews = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
+
+[params.gitalk]
+owner = "jonyhy96"    
+repo = "jonyhy96.github.io"
+clientId = "0588d67cc5677fc1c83f"  
+clientSecret = "3e427737921a07b7396dacf47993db9ad660494a"
