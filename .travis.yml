@@ -2,7 +2,9 @@ sudo: false
 language: go  
 git:  
     depth: 1  
-install: go get -v github.com/gohugoio/hugo  
+install:
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.65.2/hugo_0.65.2_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.65.2_Linux-64bit.deb
 script:  
     ‐ hugo  
 deploy:  
