@@ -64,3 +64,8 @@ owner = "jonyhy96"
 repo = "jonyhy96.github.io"
 clientId = "0588d67cc5677fc1c83f"  
 clientSecret = "3e427737921a07b7396dacf47993db9ad660494a"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
